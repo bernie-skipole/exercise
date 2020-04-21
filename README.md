@@ -7,4 +7,4 @@ and follow timed warmup - stretches - intervals etc.
 
 Needs the skipole framework to run.
 
-It is currently line at www.webparametrics.co.uk
+It is currently online at www.webparametrics.co.uk
