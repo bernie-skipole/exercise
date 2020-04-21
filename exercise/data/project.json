@@ -1,0 +1,1683 @@
+{
+"url": "/exercise/",
+"default_language": "en",
+"brief": "Displays exercise routines",
+"version": "0.0.1",
+"skipole": "3.6.6",
+"specialpages": {
+"alternate_audiotest": 6,
+"alternate_run_exercise": 4006,
+"alternate_skip_page": 4008,
+"exer_css": 5035,
+"favicon": 3002,
+"general_json": 2002,
+"home": 1,
+"jquery_core": "skis,jquery_core",
+"no_javascript": "skis,no_javascript",
+"redirector": "skis,redirector",
+"server_error": "skis,server_error",
+"ski_basic": "skis,ski_basic",
+"ski_checkbox": "skis,ski_checkbox",
+"ski_confirm": "skis,ski_confirm",
+"ski_debug_tools": "skis,ski_debug_tools",
+"ski_dropdown": "skis,ski_dropdown",
+"ski_error_messages": "skis,ski_error_messages",
+"ski_footers": "skis,ski_footers",
+"ski_headers": "skis,ski_headers",
+"ski_info": "skis,ski_info",
+"ski_inputforms": "skis,ski_inputforms",
+"ski_inputtables": "skis,ski_inputtables",
+"ski_inputtext": "skis,ski_inputtext",
+"ski_links": "skis,ski_links",
+"ski_lists": "skis,ski_lists",
+"ski_logins": "skis,ski_logins",
+"ski_paras": "skis,ski_paras",
+"ski_paths": "skis,ski_paths",
+"ski_radio": "skis,ski_radio",
+"ski_svgbasics": "skis,ski_svgbasics",
+"ski_svggraphs": "skis,ski_svggraphs",
+"ski_svgmeters": "skis,ski_svgmeters",
+"ski_tables": "skis,ski_tables",
+"ski_textarea": "skis,ski_textarea",
+"ski_upload": "skis,ski_upload",
+"skipole_js": "skis,skipole_js",
+"url_not_found": "skis,url_not_found",
+"validate_error": "skis,validate_error",
+"w3_css": "skis,w3_css",
+"w3_theme_ski_css": 1008
+},
+"sections": {
+"exlink": [
+"Section",
+{
+"tag_name": "div",
+"brief": "Holds button to exercises",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "ex1",
+"brief": "exercise 1",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round",
+"button_style": "",
+"button_text": "Exercise 1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "w3-container w3-center",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "ex1",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "4004",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "description",
+"brief": "A description of the exercise",
+"fields": {
+"para_text": "",
+"show": true,
+"widget_class": "w3-content w3-center",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "time",
+"brief": "The length of time of the exercise",
+"fields": {
+"para_text": "",
+"show": true,
+"widget_class": "w3-content w3-center",
+"widget_style": ""
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "hr",
+"brief": "Rule",
+"show": true,
+"attribs": {
+"class": "w3-content w3-center"
+}
+}
+]
+]
+}
+]
+},
+"RootFolder": {
+"brief": "Site root",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"css": {
+"ident": 1000,
+"brief": "Holds CSS pages",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"exer.css": {
+"ident": 5035,
+"brief": "css to change font size",
+"FilePage": {
+"filepath": "exercise/static/css/exer.css",
+"enable_cache": false,
+"mimetype": "text/css"
+}
+},
+"w3-theme-ski.css": {
+"ident": 1008,
+"brief": "Links to .../static/css/w3-theme-ski.css",
+"FilePage": {
+"filepath": "exercise/static/css/w3-theme-ski.css",
+"enable_cache": true,
+"mimetype": "text/css"
+}
+}
+}
+},
+"exercises": {
+"ident": 4000,
+"brief": "Folder holding exercise pages",
+"default_page_name": "get_exercise",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 4050,
+"brief": "Exercise 1 restricted pages",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"index_template": {
+"ident": 4051,
+"brief": "Template for exercises index page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"catch_to_html": null,
+"lang": "en",
+"backcol": "#ffffff",
+"default_error_widget": [
+"",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "link to favicon",
+"show": true,
+"attribs": {
+"href": "{favicon}",
+"rel": "icon",
+"type": "image/svg+xml"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski.css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "containing div",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "error_messages.ErrorPara",
+"name": "top_error",
+"brief": "Default error widget for the page",
+"fields": {
+"clear_error": false,
+"hide": true,
+"show": true,
+"show_error": "An unknown error has occurred.",
+"widget_class": "w3-red",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "headers.HeaderText2",
+"name": "ex1",
+"brief": "Exercise header text",
+"fields": {
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"h_class": "",
+"h_style": "",
+"large_text": "Exercise 1",
+"p_class": "",
+"p_style": "",
+"show": true,
+"show_error": "",
+"small_text": "Twenty minutes of sweat",
+"widget_class": "w3-content w3-center",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "time",
+"brief": "Duration of the test",
+"fields": {
+"para_text": "",
+"show": true,
+"widget_class": "w3-content w3-center",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "start",
+"brief": "starts the exercise",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round",
+"button_style": "",
+"button_text": "Start",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "w3-container w3-center",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "4002",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "or back to home page paragraph",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-center"
+},
+"parts": [
+[
+"Text",
+"Or back to home page:"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "back",
+"brief": "back to home page",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round",
+"button_style": "",
+"button_text": "Back",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "w3-container w3-center",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "hr",
+"brief": "Rule",
+"show": true,
+"attribs": {
+"class": "w3-content w3-center"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About sound",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-content w3-center"
+},
+"parts": [
+[
+"TextBlock",
+{
+"textref": "more_autoplay",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"start_exercise": {
+"ident": 4052,
+"brief": "Template for the exercise",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 5,
+"interval_target": 4003,
+"catch_to_html": null,
+"lang": "en",
+"backcol": "#ffffff",
+"default_error_widget": [
+"",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "link to favicon",
+"show": true,
+"attribs": {
+"href": "{favicon}",
+"rel": "icon",
+"type": "image/svg+xml"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski.css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link exer.css",
+"show": true,
+"attribs": {
+"href": "{exer_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "containing div",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container w3-content"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "error_messages.ErrorPara",
+"name": "top_error",
+"brief": "Default error widget for the page",
+"fields": {
+"clear_error": false,
+"hide": true,
+"show": true,
+"show_error": "An unknown error has occurred.",
+"widget_class": "w3-red",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.Audio2",
+"name": "audiolink",
+"brief": "Link to sound files played by JSON",
+"fields": {
+"controls": false,
+"play": true,
+"show": true,
+"src_mp3": "/sounds/complete.mp3",
+"src_ogg": "/sounds/complete.oga",
+"src_wav": "",
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "headers.HeaderText2",
+"name": "ex1",
+"brief": "Exercise header text",
+"fields": {
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"h_class": "",
+"h_style": "",
+"large_text": "Exercise",
+"p_class": "",
+"p_style": "",
+"show": true,
+"show_error": "",
+"small_text": "Twenty minutes of sweat",
+"widget_class": "w3-center showgrow",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "info.ProgressBar1",
+"name": "bar",
+"brief": "progress bar widget",
+"fields": {
+"label": "",
+"label_class": "",
+"label_style": "",
+"max": "100",
+"progress_class": "",
+"progress_style": "width:50%",
+"show": true,
+"text": "0%",
+"value": "0",
+"widget_class": "w3-center w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "headers.HeaderText1",
+"name": "ex2",
+"brief": "exercise item",
+"fields": {
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"h_class": "hgrowfont",
+"h_style": "",
+"large_text": "Exercise",
+"p_class": "pgrowfont",
+"p_style": "",
+"show": true,
+"show_error": "",
+"small_text": "Twenty minutes of sweat",
+"widget_class": "w3-center",
+"widget_style": "margin-top:20px;"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "button container div",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-row",
+"style": "margin-left:auto;width:60%;margin-right:auto;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "exit",
+"brief": "quits the exercise",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round",
+"button_style": "width:100%;",
+"button_text": "Exit",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-container w3-third",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "pause",
+"brief": "pause or play the exercise",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round",
+"button_style": "width:100%;",
+"button_text": "Pause",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "pause",
+"get_field2": "",
+"hide": false,
+"json_ident": "4006",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-container w3-third",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "skip",
+"brief": "skips to next exercise",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round",
+"button_style": "width:100%;",
+"button_text": "Skip",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "4005",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-container w3-third",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.DivPara",
+"name": "next",
+"brief": "Paragraph displaying 'next'",
+"fields": {
+"clear_error": false,
+"error_class": "w3-red",
+"para_class": "",
+"para_text": "Next:",
+"pre_line": true,
+"show": true,
+"show_error": "",
+"widget_class": "w3-center",
+"widget_style": "margin-top:20px;"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"get_exercise": {
+"ident": 4004,
+"brief": "Choose the exercise",
+"RespondPage": {
+"class": "FieldStoreSubmit",
+"original_args": {
+"fail_ident": "home",
+"submit_list": [
+"get_exercise"
+],
+"target_ident": 4051
+},
+"original_fields": {
+"get_field1": ""
+}
+}
+},
+"pauseplay": {
+"ident": 4006,
+"brief": "Pause or Play",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+4052
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"pauseplay"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"pause:get_field1": ""
+}
+}
+},
+"run_exercise": {
+"ident": 4003,
+"brief": "handles the running exercise",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [
+4052
+],
+"fail_ident": "general_json",
+"submit_list": [
+"run_exercise"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"skip": {
+"ident": 4005,
+"brief": "Skip to next exercise",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+4052
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"skip"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"skip:get_field1": ""
+}
+}
+},
+"start": {
+"ident": 4002,
+"brief": "Start the exercise",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+4051
+],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"start_exercise"
+],
+"submit_option": true,
+"target_ident": 4052,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"start:get_field1": ""
+}
+}
+}
+}
+},
+"images": {
+"ident": 3000,
+"brief": "Holds images",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"logo.svg": {
+"ident": 3001,
+"brief": "skipole logo",
+"FilePage": {
+"filepath": "exercise/static/images/logo.svg",
+"enable_cache": true,
+"mimetype": "image/svg+xml"
+}
+},
+"logo_icon16.svg": {
+"ident": 3002,
+"brief": "skipole icon",
+"FilePage": {
+"filepath": "exercise/static/images/logo_icon16.svg",
+"enable_cache": true,
+"mimetype": "image/svg+xml"
+}
+}
+}
+},
+"restricted": {
+"ident": 2000,
+"brief": "Holds pages not accessable directly via URL",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"general_json": {
+"ident": 2002,
+"brief": "Empty JSON file for general use",
+"JSON": {
+"enable_cache": false,
+"content": {}
+}
+},
+"index_template": {
+"ident": 2001,
+"brief": "The template for the index page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"catch_to_html": null,
+"lang": "en",
+"backcol": "#ffffff",
+"default_error_widget": [
+"",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "link to favicon",
+"show": true,
+"attribs": {
+"href": "{favicon}",
+"rel": "icon",
+"type": "image/svg+xml"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski.css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "containing div",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "error_messages.ErrorPara",
+"name": "top_error",
+"brief": "Default error widget for the page",
+"fields": {
+"clear_error": false,
+"hide": true,
+"show": true,
+"show_error": "An unknown error has occurred.",
+"widget_class": "w3-red",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.Audio1",
+"name": "audiolink",
+"brief": "Test audio",
+"fields": {
+"controls": false,
+"mp3_ident": "3",
+"ogg_ident": "4",
+"play": false,
+"show": true,
+"wav_ident": "",
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph with w3-content class",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-content w3-center"
+},
+"parts": [
+[
+"TextBlock",
+{
+"textref": "welcome_text",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "exercise links",
+"section_name": "exlink",
+"placename": "exlink",
+"multiplier": 0,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph with w3-content class",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-content w3-center"
+},
+"parts": [
+[
+"TextBlock",
+{
+"textref": "about_autoplay",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "audiotestbutton",
+"brief": "Tests audio",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round",
+"button_style": "",
+"button_text": "Test Audio",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "w3-container w3-center",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "2",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+},
+"sounds": {
+"ident": 5000,
+"brief": "Folder holding sounds",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"bell.mp3": {
+"ident": 5013,
+"brief": "Link to exercise/static/sounds/bell.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/bell.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"bell.oga": {
+"ident": 5023,
+"brief": "Link to exercise/static/sounds/bell.oga",
+"FilePage": {
+"filepath": "exercise/static/sounds/bell.oga",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"complete.mp3": {
+"ident": 5006,
+"brief": "Link to exercise/static/sounds/complete.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/complete.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"complete.oga": {
+"ident": 5014,
+"brief": "Link to exercise/static/sounds/complete.oga",
+"FilePage": {
+"filepath": "exercise/static/sounds/complete.oga",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"coolstretch.mp3": {
+"ident": 5033,
+"brief": "Link to exercise/static/sounds/coolstretch.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/coolstretch.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"coolstretch.ogg": {
+"ident": 5002,
+"brief": "Link to exercise/static/sounds/coolstretch.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/coolstretch.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"coolstretch.wav": {
+"ident": 5012,
+"brief": "Link to exercise/static/sounds/coolstretch.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/coolstretch.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"dorsalcrunch.mp3": {
+"ident": 5001,
+"brief": "Link to exercise/static/sounds/dorsalcrunch.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/dorsalcrunch.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"dorsalcrunch.ogg": {
+"ident": 5009,
+"brief": "Link to exercise/static/sounds/dorsalcrunch.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/dorsalcrunch.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"dorsalcrunch.wav": {
+"ident": 5004,
+"brief": "Link to exercise/static/sounds/dorsalcrunch.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/dorsalcrunch.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"finalstretches.mp3": {
+"ident": 5028,
+"brief": "Link to exercise/static/sounds/finalstretches.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/finalstretches.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"finalstretches.wav": {
+"ident": 5027,
+"brief": "Link to exercise/static/sounds/finalstretches.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/finalstretches.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"finish.mp3": {
+"ident": 5005,
+"brief": "Link to exercise/static/sounds/finish.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/finish.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"finish.wav": {
+"ident": 5008,
+"brief": "Link to exercise/static/sounds/finish.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/finish.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"froglunge.mp3": {
+"ident": 5025,
+"brief": "Link to exercise/static/sounds/froglunge.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/froglunge.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"froglunge.ogg": {
+"ident": 5030,
+"brief": "Link to exercise/static/sounds/froglunge.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/froglunge.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"froglunge.wav": {
+"ident": 5021,
+"brief": "Link to exercise/static/sounds/froglunge.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/froglunge.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"intervalintro.mp3": {
+"ident": 5032,
+"brief": "Link to exercise/static/sounds/intervalintro.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/intervalintro.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"intervalintro.ogg": {
+"ident": 5034,
+"brief": "Link to exercise/static/sounds/intervalintro.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/intervalintro.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"intervalintro.wav": {
+"ident": 5007,
+"brief": "Link to exercise/static/sounds/intervalintro.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/intervalintro.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"nextinterval.mp3": {
+"ident": 5011,
+"brief": "Link to exercise/static/sounds/nextinterval.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/nextinterval.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"nextinterval.wav": {
+"ident": 5015,
+"brief": "Link to exercise/static/sounds/nextinterval.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/nextinterval.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"rowpress.mp3": {
+"ident": 5016,
+"brief": "Link to exercise/static/sounds/rowpress.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/rowpress.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"rowpress.ogg": {
+"ident": 5010,
+"brief": "Link to exercise/static/sounds/rowpress.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/rowpress.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"rowpress.wav": {
+"ident": 5031,
+"brief": "Link to exercise/static/sounds/rowpress.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/rowpress.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"skipburp.mp3": {
+"ident": 5003,
+"brief": "Link to exercise/static/sounds/skipburp.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/skipburp.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"skipburp.ogg": {
+"ident": 5017,
+"brief": "Link to exercise/static/sounds/skipburp.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/skipburp.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"skipburp.wav": {
+"ident": 5019,
+"brief": "Link to exercise/static/sounds/skipburp.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/skipburp.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"stretchintro.mp3": {
+"ident": 5024,
+"brief": "Link to exercise/static/sounds/stretchintro.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/stretchintro.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"stretchintro.ogg": {
+"ident": 5026,
+"brief": "Link to exercise/static/sounds/stretchintro.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/stretchintro.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"stretchintro.wav": {
+"ident": 5020,
+"brief": "Link to exercise/static/sounds/stretchintro.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/stretchintro.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"warmup.mp3": {
+"ident": 5018,
+"brief": "Link to exercise/static/sounds/warmup.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/warmup.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"warmup.ogg": {
+"ident": 5022,
+"brief": "Link to exercise/static/sounds/warmup.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/warmup.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"warmup.wav": {
+"ident": 5029,
+"brief": "Link to exercise/static/sounds/warmup.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/warmup.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+}
+}
+}
+},
+"pages": {
+"audioprompt": {
+"ident": 2,
+"brief": "Tests audio",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [
+2001
+],
+"fail_ident": "general_json",
+"submit_list": [
+"audiotest"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"complete.mp3": {
+"ident": 3,
+"brief": "test audio file",
+"FilePage": {
+"filepath": "exercise/static/complete.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"complete.oga": {
+"ident": 4,
+"brief": "test audio file",
+"FilePage": {
+"filepath": "exercise/static/complete.oga",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"index": {
+"ident": 1,
+"brief": "Sets exercise buttons",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "server_error",
+"submit_list": [
+"index"
+],
+"target_ident": 2001
+},
+"original_fields": {}
+}
+}
+}
+}
+}

@@ -1,0 +1,7 @@
+{
+  "about_autoplay": "As exercises progress, audio prompts are sent. Your browser may have 'audio autoplay' disabled as default, look for a crossed out speaker symbol in the URL bar. If this is the case, the prompts will not sound. Most browsers should allow you to enable autoplay on a per site basis, if you can do this, these prompts will be more effective.",
+  "exercise1_text": "Twenty minutes of sweat",
+  "more_autoplay": "When you press 'Start' the exercise plays. Initially an audio description will sound, if it does not, again check the autoplay audio setting of your browser, since it may need enabling for each page.\r\nYou will only have to enable it once as the exercise is running, since the exercise runs throughout on a single page.",
+  "no_javascript_text": "JAVASCRIPT FAILURE\r\n\r\nThis page is shown because the script on the previous page has failed to run.\r\n\r\nThis could be due to either a failure in the script, or your browser has javascript disabled.",
+  "welcome_text": "This site displays and prompts timed exercise routines.\r\n\r\nDisclaimer - The site functionality provides timed audio and visual prompts only, not detailed descriptions. It is intended only for experienced users who are familiar with the exercises named, and able to adapt their efforts to their own fitness level.\r\n\r\n\r\nChoose the routine to start:"
+}
