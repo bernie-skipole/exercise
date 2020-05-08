@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Displays exercise routines",
 "version": "0.0.1",
-"skipole": "3.6.6",
+"skipole": "3.7.2",
 "specialpages": {
 "alternate_audiotest": 6,
 "alternate_run_exercise": 4006,
@@ -864,6 +864,27 @@
 "show_error": "",
 "widget_class": "w3-center",
 "widget_style": "margin-top:20px;"
+}
+}
+],
+[
+"Widget",
+{
+"class": "info.ProgressBar1",
+"name": "major_section",
+"brief": "major section progress bar",
+"fields": {
+"label": "",
+"label_class": "",
+"label_style": "",
+"max": "100",
+"progress_class": "",
+"progress_style": "width:50%",
+"show": true,
+"text": "0%",
+"value": "0",
+"widget_class": "w3-center w3-section",
+"widget_style": ""
 }
 }
 ]

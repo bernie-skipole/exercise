@@ -1,23 +1,29 @@
 
-
-
 import os, json, shutil
 
-json_directory = "/home/bernard/exercise/jsonfiles"
+json_directory = "/home/bernard/git/exercise/jsonfiles"
 
 # each 'section' is defined by a list of
 # [ section time in seconds, section title, section text, mp3 file, wav file, ogg file]
 # If sound files are not available, leave as empty strings
 
+# example:
+# [20, "Recovery", "Take your time", "", "", ""]
 
-recovery1 = [20, "Recovery", "Take your time", "", "", ""]
+# if a section is in a repeated part, then the time value can either be a number as above
+# which will be repeated, or it can be a list of numbers, with list length matching
+# the number of repeats
+
+# example:
+# [[30, 40, 50, 60], "Recovery", "Take your time", "", "", ""]
 
 
 exercises = [
 
-  ['ex1',                      # filename
+  ['ex1',                        # reference string, use ex2, ex3, .. etc for further exercises
    'Exercise One',               # exercise title
    'Hardcore circuit training - ten exercise stations, four time intervals',        # exercise description
+
    [300, "Warm up", "Jogging on the spot or Skipping", "warmup.mp3", "warmup.wav"],
    [20, "Recovery", "Take your time", "stretchintro.mp3", "stretchintro.wav", ""],
    [20, "Stretches", "hamstrings - left", "", "", ""],
@@ -37,10 +43,12 @@ exercises = [
    [20, "Stretches", "triceps - right", "complete.mp3", "complete.oga", ""],
    [20, "Stretches", "hip flexor - left", "complete.mp3", "complete.oga", ""],
    [20, "Stretches", "hip flexor - right", "complete.mp3", "complete.oga", ""],
-   [20, "Recovery", "Take your time", "intervalintro.mp3", "intervalintro.wav", ""],
+   [5, "Recovery", "Take your time", "complete.mp3", "complete.oga", ""],
+   [15, "Recovery", "Take your time", "intervalintro.mp3", "intervalintro.wav", ""],
+
    ['repeat', 4,           # four exercise intervals
 
-       [[30, 40, 50, 60], "Legs", "Alternate, leg climber", "complete.mp3", "complete.oga", ""],
+       [[30, 40, 50, 60], "Legs", "Alternate, leg climber", "", "", ""],
        [[30, 40, 50, 60], "Squats", "Get down", "complete.mp3", "complete.oga", ""],
 
        [10, "Recovery", "Take your time", "complete.mp3", "complete.oga", ""],
@@ -104,6 +112,7 @@ if os.path.isdir(json_directory):
     shutil.rmtree(json_directory)
 os.mkdir(json_directory)
 
+# Save each exercise in a json file
 
 for obj in exercises:
     filename = os.path.join(json_directory, obj[0] + ".json")

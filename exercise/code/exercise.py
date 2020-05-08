@@ -32,7 +32,7 @@ PROJECT = 'exercise'
 
 
 ##### Development version
-JSON_DIRECTORY = "/home/bernard/exercise/jsonfiles"
+JSON_DIRECTORY = "/home/bernard/git/exercise/jsonfiles"
 
 
 def start_call(called_ident, skicall):
@@ -141,6 +141,9 @@ def _start_exercise_page(skicall):
         skicall.page_data['skip', 'get_field1'] = 0  # This get field of zero is used to 'skip' back to previous page
     # set sound files for the first section
     skicall.page_data['audiolink','play'] = _sound_urls(skicall, exercise, 0)
+    # The major section bar displays the time taken for the current 'major' section
+    skicall.page_data['major_section','value'] = 0
+
 
 
 def _run_exercise_page(skicall):
@@ -199,6 +202,18 @@ def _run_exercise_page(skicall):
     else:
         skicall.page_data['next', 'para_text'] = "Next: " + next_section_title
         skicall.page_data['skip', 'get_field1'] = next_section_number
+    # set the major section bar
+    cumulative = skicall.proj_data[exercise]['cumulative']
+    # exercisetime is the time so far
+    if exercisetime in cumulative:
+        skicall.page_data['major_section','value'] = "0.0"
+        return
+    lastmajorstarttime = 0
+    for t in cumulative:
+        if exercisetime < t:
+            skicall.page_data['major_section','value'] = int((exercisetime - lastmajorstarttime) * 100 / (t-lastmajorstarttime))
+            break
+        lastmajorstarttime = t
 
 
 def _pauseplay_page(skicall):
@@ -264,6 +279,8 @@ def _skip_page(skicall):
         skicall.page_data['skip', 'get_field1'] = 0
     # set sound files for the section
     skicall.page_data['audiolink','play'] = _sound_urls(skicall, exercise, section)
+    skicall.page_data['major_section','value'] = "0.0"
+
 
 
 def _read_files():
@@ -308,17 +325,26 @@ def _read_files():
                     else:
                         sectionlist.append(item)
             # get length of time for the exercise
-            sectiontime = 0
+            totaltime = 0
             for section in sectionlist:
-                sectiontime += section[0]
-            exdef.append(sectiontime)
-            # exdef consists of filename, exercise title, description, exercise time in seconds
-            proj_data[exerciselist[0]] = {'exdef':exdef, 'sections':sectionlist, 'next':_next_section(sectionlist)}
+                totaltime += section[0]
+            exdef.append(totaltime)
+
+            # exdef consists of filename, exercise title, description, total exercise time in seconds
+
+            # get list, for each section, give the number of the next 'major' section
+            # a major section being a section with a different title
+            major_index = _next_major_section(sectionlist)
+
+            # get list of cumulative times when each major section starts
+            cumulative = _cumulative_major_intervals(totaltime, sectionlist, major_index)
+
+            proj_data[exerciselist[0]] = {'exdef':exdef, 'sections':sectionlist, 'next':major_index, 'cumulative':cumulative}
     return proj_data
 
 
-def _next_section(sectionlist):
-    "For each section, get the next section"
+def _next_major_section(sectionlist):
+    "Returns a list of next major section numbers"
 
     length = len(sectionlist)
 
@@ -346,6 +372,33 @@ def _next_section(sectionlist):
         nextsections[counter] = next_number
 
     return nextsections
+
+
+def _cumulative_major_intervals(totaltime, sectionlist, major_index):
+    """Returns the cumulative time intervals
+       such that [ t1, t2, t3...]
+       t1 is time first major section ends, and second major section starts
+       t2 is the time the second major section ends, and third major section starts
+       t3 is the time the third major section ends, etc"""
+
+    # a section in the sectionlist is
+    # [ section time in seconds, section title, section text, mp3 file, wav file, ogg file]
+
+    cumulative = []
+    cumulative_time = 0
+
+    for idx, section in enumerate(sectionlist):
+        if major_index[idx] is None:
+            # no further sections
+            cumulative.append(totaltime)
+            break
+        cumulative_time += section[0]
+        if major_index[idx] == idx+1:
+            # The next section is flagged as the start of the next major section
+            cumulative.append(cumulative_time)
+
+    return cumulative
+
 
 
 def _sound_urls(skicall, exercise, section):
