@@ -423,13 +423,13 @@ def _sound_urls(skicall, exercise, section):
        if not sound:
            continue
        if sound.endswith(".mp3"):
-           skicall.page_data['audiolink','src_mp3'] = os.path.join(projecturl, "sounds", sound)
+           skicall.page_data['audiolink','src_mp3'] = os.path.join(projecturl, "sounds", exercise, sound)
            soundset = True
        elif sound.endswith(".wav"):
-           skicall.page_data['audiolink','src_wav'] = os.path.join(projecturl, "sounds", sound)
+           skicall.page_data['audiolink','src_wav'] = os.path.join(projecturl, "sounds", exercise, sound)
            soundset = True
        elif sound.endswith(".ogg") or sound.endswith(".oga"):
-           skicall.page_data['audiolink','src_ogg'] = os.path.join(projecturl, "sounds", sound)
+           skicall.page_data['audiolink','src_ogg'] = os.path.join(projecturl, "sounds", exercise, sound)
            soundset = True
 
     return soundset

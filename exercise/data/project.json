@@ -1335,6 +1335,11 @@
 "brief": "Folder holding sounds",
 "default_page_name": "index",
 "restricted": false,
+"folders": {
+"ex1": {
+"ident": 5090,
+"brief": "Holds sounds for ex1",
+"restricted": false,
 "folders": {},
 "pages": {
 "bell.mp3": {
@@ -1644,6 +1649,323 @@
 }
 }
 }
+},
+"ex2": {
+"ident": 5100,
+"brief": "Folder holding ex2 sounds",
+"restricted": false,
+"folders": {},
+"pages": {
+"bell.mp3": {
+"ident": 5113,
+"brief": "Link to exercise/static/sounds/ex2/bell.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/bell.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"bell.oga": {
+"ident": 5123,
+"brief": "Link to exercise/static/sounds/ex2/bell.oga",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/bell.oga",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"complete.mp3": {
+"ident": 5106,
+"brief": "Link to exercise/static/sounds/ex2/complete.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/complete.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"complete.oga": {
+"ident": 5114,
+"brief": "Link to exercise/static/sounds/ex2/complete.oga",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/complete.oga",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"coolstretch.mp3": {
+"ident": 5133,
+"brief": "Link to exercise/static/sounds/ex2/coolstretch.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/coolstretch.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"coolstretch.ogg": {
+"ident": 5102,
+"brief": "Link to exercise/static/sounds/ex2/coolstretch.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/coolstretch.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"coolstretch.wav": {
+"ident": 5112,
+"brief": "Link to exercise/static/sounds/ex2/coolstretch.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/coolstretch.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"dorsalcrunch.mp3": {
+"ident": 5101,
+"brief": "Link to exercise/static/sounds/ex2/dorsalcrunch.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/dorsalcrunch.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"dorsalcrunch.ogg": {
+"ident": 5109,
+"brief": "Link to exercise/static/sounds/ex2/dorsalcrunch.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/dorsalcrunch.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"dorsalcrunch.wav": {
+"ident": 5104,
+"brief": "Link to exercise/static/sounds/ex2/dorsalcrunch.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/dorsalcrunch.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"finalstretches.mp3": {
+"ident": 5128,
+"brief": "Link to exercise/static/sounds/ex2/finalstretches.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/finalstretches.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"finalstretches.wav": {
+"ident": 5127,
+"brief": "Link to exercise/static/sounds/ex2/finalstretches.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/finalstretches.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"finish.mp3": {
+"ident": 5105,
+"brief": "Link to exercise/static/sounds/ex2/finish.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/finish.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"finish.wav": {
+"ident": 5108,
+"brief": "Link to exercise/static/sounds/ex2/finish.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/finish.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"froglunge.mp3": {
+"ident": 5125,
+"brief": "Link to exercise/static/sounds/ex2/froglunge.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/froglunge.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"froglunge.ogg": {
+"ident": 5130,
+"brief": "Link to exercise/static/sounds/ex2/froglunge.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/froglunge.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"froglunge.wav": {
+"ident": 5121,
+"brief": "Link to exercise/static/sounds/ex2/froglunge.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/froglunge.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"intervalintro.mp3": {
+"ident": 5132,
+"brief": "Link to exercise/static/sounds/ex2/intervalintro.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/intervalintro.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"intervalintro.ogg": {
+"ident": 5134,
+"brief": "Link to exercise/static/sounds/ex2/intervalintro.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/intervalintro.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"intervalintro.wav": {
+"ident": 5107,
+"brief": "Link to exercise/static/sounds/ex2/intervalintro.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/intervalintro.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"nextinterval.mp3": {
+"ident": 5111,
+"brief": "Link to exercise/static/sounds/ex2/nextinterval.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/nextinterval.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"nextinterval.wav": {
+"ident": 5115,
+"brief": "Link to exercise/static/sounds/ex2/nextinterval.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/nextinterval.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"rowpress.mp3": {
+"ident": 5116,
+"brief": "Link to exercise/static/sounds/ex2/rowpress.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/rowpress.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"rowpress.ogg": {
+"ident": 5110,
+"brief": "Link to exercise/static/sounds/ex2/rowpress.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/rowpress.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"rowpress.wav": {
+"ident": 5131,
+"brief": "Link to exercise/static/sounds/ex2/rowpress.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/rowpress.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"skipburp.mp3": {
+"ident": 5103,
+"brief": "Link to exercise/static/sounds/ex2/skipburp.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/skipburp.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"skipburp.ogg": {
+"ident": 5117,
+"brief": "Link to exercise/static/sounds/ex2/skipburp.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/skipburp.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"skipburp.wav": {
+"ident": 5119,
+"brief": "Link to exercise/static/sounds/ex2/skipburp.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/skipburp.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"stretchintro.mp3": {
+"ident": 5124,
+"brief": "Link to exercise/static/sounds/ex2/stretchintro.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/stretchintro.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"stretchintro.ogg": {
+"ident": 5126,
+"brief": "Link to exercise/static/sounds/ex2/stretchintro.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/stretchintro.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"stretchintro.wav": {
+"ident": 5120,
+"brief": "Link to exercise/static/sounds/ex2/stretchintro.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/stretchintro.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+},
+"warmup.mp3": {
+"ident": 5118,
+"brief": "Link to exercise/static/sounds/ex2/warmup.mp3",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/warmup.mp3",
+"enable_cache": false,
+"mimetype": "audio/mpeg"
+}
+},
+"warmup.ogg": {
+"ident": 5122,
+"brief": "Link to exercise/static/sounds/ex2/warmup.ogg",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/warmup.ogg",
+"enable_cache": false,
+"mimetype": "audio/ogg"
+}
+},
+"warmup.wav": {
+"ident": 5129,
+"brief": "Link to exercise/static/sounds/ex2/warmup.wav",
+"FilePage": {
+"filepath": "exercise/static/sounds/ex2/warmup.wav",
+"enable_cache": false,
+"mimetype": "audio/x-wav"
+}
+}
+}
+}
+},
+"pages": {}
 }
 },
 "pages": {
