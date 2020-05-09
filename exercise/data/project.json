@@ -679,8 +679,8 @@
 "controls": false,
 "play": true,
 "show": true,
-"src_mp3": "/sounds/complete.mp3",
-"src_ogg": "/sounds/complete.oga",
+"src_mp3": "/sounds/ex1/complete.mp3",
+"src_ogg": "/sounds/ex1/complete.oga",
 "src_wav": "",
 "widget_class": "",
 "widget_style": ""
@@ -1339,306 +1339,306 @@
 "pages": {
 "bell.mp3": {
 "ident": 5013,
-"brief": "Link to exercise/static/sounds/bell.mp3",
+"brief": "Link to exercise/static/sounds/ex1/bell.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/bell.mp3",
+"filepath": "exercise/static/sounds/ex1/bell.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "bell.oga": {
 "ident": 5023,
-"brief": "Link to exercise/static/sounds/bell.oga",
+"brief": "Link to exercise/static/sounds/ex1/bell.oga",
 "FilePage": {
-"filepath": "exercise/static/sounds/bell.oga",
+"filepath": "exercise/static/sounds/ex1/bell.oga",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "complete.mp3": {
 "ident": 5006,
-"brief": "Link to exercise/static/sounds/complete.mp3",
+"brief": "Link to exercise/static/sounds/ex1/complete.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/complete.mp3",
+"filepath": "exercise/static/sounds/ex1/complete.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "complete.oga": {
 "ident": 5014,
-"brief": "Link to exercise/static/sounds/complete.oga",
+"brief": "Link to exercise/static/sounds/ex1/complete.oga",
 "FilePage": {
-"filepath": "exercise/static/sounds/complete.oga",
+"filepath": "exercise/static/sounds/ex1/complete.oga",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "coolstretch.mp3": {
 "ident": 5033,
-"brief": "Link to exercise/static/sounds/coolstretch.mp3",
+"brief": "Link to exercise/static/sounds/ex1/coolstretch.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/coolstretch.mp3",
+"filepath": "exercise/static/sounds/ex1/coolstretch.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "coolstretch.ogg": {
 "ident": 5002,
-"brief": "Link to exercise/static/sounds/coolstretch.ogg",
+"brief": "Link to exercise/static/sounds/ex1/coolstretch.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/coolstretch.ogg",
+"filepath": "exercise/static/sounds/ex1/coolstretch.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "coolstretch.wav": {
 "ident": 5012,
-"brief": "Link to exercise/static/sounds/coolstretch.wav",
+"brief": "Link to exercise/static/sounds/ex1/coolstretch.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/coolstretch.wav",
+"filepath": "exercise/static/sounds/ex1/coolstretch.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "dorsalcrunch.mp3": {
 "ident": 5001,
-"brief": "Link to exercise/static/sounds/dorsalcrunch.mp3",
+"brief": "Link to exercise/static/sounds/ex1/dorsalcrunch.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/dorsalcrunch.mp3",
+"filepath": "exercise/static/sounds/ex1/dorsalcrunch.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "dorsalcrunch.ogg": {
 "ident": 5009,
-"brief": "Link to exercise/static/sounds/dorsalcrunch.ogg",
+"brief": "Link to exercise/static/sounds/ex1/dorsalcrunch.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/dorsalcrunch.ogg",
+"filepath": "exercise/static/sounds/ex1/dorsalcrunch.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "dorsalcrunch.wav": {
 "ident": 5004,
-"brief": "Link to exercise/static/sounds/dorsalcrunch.wav",
+"brief": "Link to exercise/static/sounds/ex1/dorsalcrunch.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/dorsalcrunch.wav",
+"filepath": "exercise/static/sounds/ex1/dorsalcrunch.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "finalstretches.mp3": {
 "ident": 5028,
-"brief": "Link to exercise/static/sounds/finalstretches.mp3",
+"brief": "Link to exercise/static/sounds/ex1/finalstretches.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/finalstretches.mp3",
+"filepath": "exercise/static/sounds/ex1/finalstretches.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "finalstretches.wav": {
 "ident": 5027,
-"brief": "Link to exercise/static/sounds/finalstretches.wav",
+"brief": "Link to exercise/static/sounds/ex1/finalstretches.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/finalstretches.wav",
+"filepath": "exercise/static/sounds/ex1/finalstretches.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "finish.mp3": {
 "ident": 5005,
-"brief": "Link to exercise/static/sounds/finish.mp3",
+"brief": "Link to exercise/static/sounds/ex1/finish.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/finish.mp3",
+"filepath": "exercise/static/sounds/ex1/finish.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "finish.wav": {
 "ident": 5008,
-"brief": "Link to exercise/static/sounds/finish.wav",
+"brief": "Link to exercise/static/sounds/ex1/finish.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/finish.wav",
+"filepath": "exercise/static/sounds/ex1/finish.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "froglunge.mp3": {
 "ident": 5025,
-"brief": "Link to exercise/static/sounds/froglunge.mp3",
+"brief": "Link to exercise/static/sounds/ex1/froglunge.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/froglunge.mp3",
+"filepath": "exercise/static/sounds/ex1/froglunge.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "froglunge.ogg": {
 "ident": 5030,
-"brief": "Link to exercise/static/sounds/froglunge.ogg",
+"brief": "Link to exercise/static/sounds/ex1/froglunge.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/froglunge.ogg",
+"filepath": "exercise/static/sounds/ex1/froglunge.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "froglunge.wav": {
 "ident": 5021,
-"brief": "Link to exercise/static/sounds/froglunge.wav",
+"brief": "Link to exercise/static/sounds/ex1/froglunge.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/froglunge.wav",
+"filepath": "exercise/static/sounds/ex1/froglunge.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "intervalintro.mp3": {
 "ident": 5032,
-"brief": "Link to exercise/static/sounds/intervalintro.mp3",
+"brief": "Link to exercise/static/sounds/ex1/intervalintro.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/intervalintro.mp3",
+"filepath": "exercise/static/sounds/ex1/intervalintro.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "intervalintro.ogg": {
 "ident": 5034,
-"brief": "Link to exercise/static/sounds/intervalintro.ogg",
+"brief": "Link to exercise/static/sounds/ex1/intervalintro.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/intervalintro.ogg",
+"filepath": "exercise/static/sounds/ex1/intervalintro.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "intervalintro.wav": {
 "ident": 5007,
-"brief": "Link to exercise/static/sounds/intervalintro.wav",
+"brief": "Link to exercise/static/sounds/ex1/intervalintro.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/intervalintro.wav",
+"filepath": "exercise/static/sounds/ex1/intervalintro.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "nextinterval.mp3": {
 "ident": 5011,
-"brief": "Link to exercise/static/sounds/nextinterval.mp3",
+"brief": "Link to exercise/static/sounds/ex1/nextinterval.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/nextinterval.mp3",
+"filepath": "exercise/static/sounds/ex1/nextinterval.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "nextinterval.wav": {
 "ident": 5015,
-"brief": "Link to exercise/static/sounds/nextinterval.wav",
+"brief": "Link to exercise/static/sounds/ex1/nextinterval.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/nextinterval.wav",
+"filepath": "exercise/static/sounds/ex1/nextinterval.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "rowpress.mp3": {
 "ident": 5016,
-"brief": "Link to exercise/static/sounds/rowpress.mp3",
+"brief": "Link to exercise/static/sounds/ex1/rowpress.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/rowpress.mp3",
+"filepath": "exercise/static/sounds/ex1/rowpress.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "rowpress.ogg": {
 "ident": 5010,
-"brief": "Link to exercise/static/sounds/rowpress.ogg",
+"brief": "Link to exercise/static/sounds/ex1/rowpress.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/rowpress.ogg",
+"filepath": "exercise/static/sounds/ex1/rowpress.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "rowpress.wav": {
 "ident": 5031,
-"brief": "Link to exercise/static/sounds/rowpress.wav",
+"brief": "Link to exercise/static/sounds/ex1/rowpress.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/rowpress.wav",
+"filepath": "exercise/static/sounds/ex1/rowpress.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "skipburp.mp3": {
 "ident": 5003,
-"brief": "Link to exercise/static/sounds/skipburp.mp3",
+"brief": "Link to exercise/static/sounds/ex1/skipburp.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/skipburp.mp3",
+"filepath": "exercise/static/sounds/ex1/skipburp.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "skipburp.ogg": {
 "ident": 5017,
-"brief": "Link to exercise/static/sounds/skipburp.ogg",
+"brief": "Link to exercise/static/sounds/ex1/skipburp.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/skipburp.ogg",
+"filepath": "exercise/static/sounds/ex1/skipburp.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "skipburp.wav": {
 "ident": 5019,
-"brief": "Link to exercise/static/sounds/skipburp.wav",
+"brief": "Link to exercise/static/sounds/ex1/skipburp.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/skipburp.wav",
+"filepath": "exercise/static/sounds/ex1/skipburp.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "stretchintro.mp3": {
 "ident": 5024,
-"brief": "Link to exercise/static/sounds/stretchintro.mp3",
+"brief": "Link to exercise/static/sounds/ex1/stretchintro.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/stretchintro.mp3",
+"filepath": "exercise/static/sounds/ex1/stretchintro.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "stretchintro.ogg": {
 "ident": 5026,
-"brief": "Link to exercise/static/sounds/stretchintro.ogg",
+"brief": "Link to exercise/static/sounds/ex1/stretchintro.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/stretchintro.ogg",
+"filepath": "exercise/static/sounds/ex1/stretchintro.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "stretchintro.wav": {
 "ident": 5020,
-"brief": "Link to exercise/static/sounds/stretchintro.wav",
+"brief": "Link to exercise/static/sounds/ex1/stretchintro.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/stretchintro.wav",
+"filepath": "exercise/static/sounds/ex1/stretchintro.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
 },
 "warmup.mp3": {
 "ident": 5018,
-"brief": "Link to exercise/static/sounds/warmup.mp3",
+"brief": "Link to exercise/static/sounds/ex1/warmup.mp3",
 "FilePage": {
-"filepath": "exercise/static/sounds/warmup.mp3",
+"filepath": "exercise/static/sounds/ex1/warmup.mp3",
 "enable_cache": false,
 "mimetype": "audio/mpeg"
 }
 },
 "warmup.ogg": {
 "ident": 5022,
-"brief": "Link to exercise/static/sounds/warmup.ogg",
+"brief": "Link to exercise/static/sounds/ex1/warmup.ogg",
 "FilePage": {
-"filepath": "exercise/static/sounds/warmup.ogg",
+"filepath": "exercise/static/sounds/ex1/warmup.ogg",
 "enable_cache": false,
 "mimetype": "audio/ogg"
 }
 },
 "warmup.wav": {
 "ident": 5029,
-"brief": "Link to exercise/static/sounds/warmup.wav",
+"brief": "Link to exercise/static/sounds/ex1/warmup.wav",
 "FilePage": {
-"filepath": "exercise/static/sounds/warmup.wav",
+"filepath": "exercise/static/sounds/ex1/warmup.wav",
 "enable_cache": false,
 "mimetype": "audio/x-wav"
 }
