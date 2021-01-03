@@ -1,24 +1,8 @@
 
 
-############
-#
-# when deploying, use this shebang, and make executable
-#
-#!/home/master/exvenv/bin/python3
-
-
-
 
 import os, sys, json
 
-
-######### If using local development version of skipole
-#
-# skipole_package_location = "/home/bernard/git/skipole"
-#
-# if skipole_package_location not in sys.path:
-#    sys.path.insert(0,skipole_package_location)
-#
 
 
 from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug
@@ -27,12 +11,7 @@ from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError,
 PROJECTFILES = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 PROJECT = 'exercise'
 
-##### Deployment version
-# JSON_DIRECTORY = "/home/master/exercise/jsonfiles"
-
-
-##### Development version
-JSON_DIRECTORY = "/home/bernard/git/exercise/jsonfiles"
+JSON_DIRECTORY = os.path.join(PROJECTFILES, "jsonfiles")
 
 
 def start_call(called_ident, skicall):
