@@ -51,7 +51,7 @@ and waitress
 
 python3 -m pip install --user skipole
 
-Python3 -m pip install --user waitress
+python3 -m pip install --user waitress
 
 It should now be possible to run exercise
 
@@ -59,7 +59,7 @@ python3 ~/www/exercise/code/exercise.py
 
 And you should get the message
 
-Serving exercise on port 8000
+Serving on http://0.0.0.0:8000
 
 Use ctrl-c to exit, and set up a service to run this automatically
 
