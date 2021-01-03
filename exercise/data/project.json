@@ -2,8 +2,8 @@
 "url": "/exercise/",
 "default_language": "en",
 "brief": "Displays exercise routines",
-"version": "0.0.1",
-"skipole": "3.7.2",
+"version": "0.0.2",
+"skipole": "5.1.2",
 "specialpages": {
 "alternate_audiotest": 6,
 "alternate_run_exercise": 4006,
@@ -1339,6 +1339,7 @@
 "ex1": {
 "ident": 5090,
 "brief": "Holds sounds for ex1",
+"default_page_name": "index",
 "restricted": false,
 "folders": {},
 "pages": {
@@ -1653,6 +1654,7 @@
 "ex2": {
 "ident": 5100,
 "brief": "Folder holding ex2 sounds",
+"default_page_name": "index",
 "restricted": false,
 "folders": {},
 "pages": {

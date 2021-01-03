@@ -1,7 +1,7 @@
 
 import os, json, shutil
 
-json_directory = "/home/bernard/git/exercise/jsonfiles"
+json_directory = "/home/bernard/git/exercise/exercise/jsonfiles"
 
 # each 'section' is defined by a list of
 # [ section time in seconds, section title, section text, mp3 file, wav file, ogg file]

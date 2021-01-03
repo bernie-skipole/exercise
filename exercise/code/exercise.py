@@ -1,17 +1,14 @@
 
 
-
 import os, sys, json
 
-
-
-from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug
+from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug, skis
 
 
 PROJECTFILES = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 PROJECT = 'exercise'
 
-JSON_DIRECTORY = os.path.join(PROJECTFILES, "jsonfiles")
+JSON_DIRECTORY = os.path.join(PROJECTFILES, PROJECT, "jsonfiles")
 
 
 def start_call(called_ident, skicall):
@@ -439,42 +436,48 @@ application = WSGIApplication(project=PROJECT,
                               url="/exercise")
 
 
-skis_code = os.path.join(PROJECTFILES, 'skis', 'code')
-if skis_code not in sys.path:
-    sys.path.append(skis_code)
-import skis
-skis_application = skis.makeapp(PROJECTFILES)
+skis_application = skis.makeapp()
 application.add_project(skis_application, url='/exercise/lib')
 
 
 
 if __name__ == "__main__":
 
+    # If called as a script, this portion runs the python waitress server
+    # and serves the project.
 
-
-    ########### REMOVE WHEN YOU DEPLOY YOUR APPLICATION
-    set_debug(True)
-    skiadmin_code = os.path.join(PROJECTFILES, 'skiadmin', 'code')
-    if skiadmin_code not in sys.path:
-        sys.path.append(skiadmin_code)
-    import skiadmin
-    skiadmin_application = skiadmin.makeapp(PROJECTFILES, editedprojname=PROJECT)
-    application.add_project(skiadmin_application, url='/exercise/skiadmin')
-    ###########
-
-    #### Deployment server
+    ###############################################################################
     #
-    # from waitress import serve
-    # serve(application, host='0.0.0.0', port=8000)
+    # you could add the 'skiadmin' sub project
+    # which can be used to develop pages for your project
     #
+    ############################### THESE LINES ADD SKIADMIN ######################
+    #                                                                             #
+    # set_debug(True)                                                               #
+    # from skipole import skiadmin                                                  #
+    # skiadmin_application = skiadmin.makeapp(editedprojname=PROJECT)               #
+    # application.add_project(skiadmin_application, url='/exercise/skiadmin')       #
+    #                                                                             #
+    ###############################################################################
 
+    # if using the waitress server
+    from waitress import serve
 
-    #### Development server
-    
-    from skipole import skilift
-    host = "127.0.0.1"
+    # or the skilift development server
+    # from skipole import skilift
+
+    # serve the application, note host 0.0.0.0 rather than
+    # 127.0.0.1 - so this will be available externally
+
+    host = "0.0.0.0"
     port = 8000
-    print("Serving %s on port %s. Call http://localhost:%s/skiadmin to edit." % (PROJECT, port, port))
-    skilift.development_server(host, port, application)
+
+    # using waitress
+    serve(application, host=host, port=port)
+
+    # or skilift
+    # print("Serving %s on port %s" % (PROJECT, port))
+    # skilift.development_server(host, port, application)
+
 
 
